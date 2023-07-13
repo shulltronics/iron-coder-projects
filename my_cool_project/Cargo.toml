@@ -12,6 +12,3 @@ cortex-m-rt = "0.7"
 embedded-time = "0.12.0"
 embedded-hal = "0.2.5"
 adafruit-feather-rp2040 = "0.6.0"
-
-iron-coder-feather-rp2040-bsp = { path = "/home/carstentb/Projects/iron-coder/iron-coder-boards/Adafruit/Feather_RP2040/bsp" }
-iron-coder-featherwing-propmaker-bsp = { path = "/home/carstentb/Projects/iron-coder/iron-coder-boards/Adafruit/FeatherWing_propmaker/bsp" }

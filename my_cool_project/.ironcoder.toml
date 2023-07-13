@@ -1,5 +1,5 @@
-name = "yo_testing"
-location = "/home/carstentb/Projects/iron-coder/iron-coder-projects/yo_testing"
+name = "my_cool_project"
+location = "/home/carstentb/Projects/iron-coder/iron-coder-projects/my_cool_project"
 current_view = "FileTree"
 
 [[system.boards]]
@@ -158,9 +158,6 @@ pins = [8, 9]
 iface_type = "I2C"
 direction = "Input"
 
-[[graph_editor.graph.nodes]]
-version = 2
-
 [[graph_editor.graph.inputs]]
 version = 0
 
@@ -226,18 +223,15 @@ version = 0
 version = 1
 
 [graph_editor.node_positions.value]
-x = 92.53125
-y = 11.93359375
+x = 287.88671875
+y = 24.33984375
 
 [[graph_editor.node_positions]]
 version = 1
 
 [graph_editor.node_positions.value]
-x = 610.2265625
-y = 20.515625
-
-[[graph_editor.node_positions]]
-version = 0
+x = 704.28125
+y = 28.04296875
 
 [graph_editor.pan_zoom]
 zoom = 0.0
