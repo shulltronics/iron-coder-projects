@@ -1,0 +1,21 @@
+name = "micromod_connection_testing"
+location = "/home/carstentb/Projects/iron-coder/projects/micromod_connection_testing"
+current_view = "BoardsView"
+
+[system]
+connections = []
+
+[[system.boards]]
+name = "MicroMod ESP32 Processor"
+manufacturer = "Sparkfun"
+is_main_board = false
+standard = "MicroMod"
+cpu = "ESP32"
+interfaces = [{ I2C = "Controller" }, { I2C = "Peripheral" }, "ADC"]
+
+[[system.boards]]
+name = "Feather nRF52840 Express"
+manufacturer = "Adafruit"
+is_main_board = false
+standard = "Feather"
+interfaces = [{ I2C = "Controller" }, { I2C = "Peripheral" }, "ADC"]

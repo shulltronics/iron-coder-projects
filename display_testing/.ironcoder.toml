@@ -1,0 +1,35 @@
+name = "display_testing"
+location = "/home/carstentb/Projects/iron-coder/projects/display_testing"
+current_view = "BoardsView"
+
+[system]
+connections = []
+
+[[system.boards]]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[system.boards.pinout]]
+interface = "UART"
+pins = [0, 1]
+
+[[system.boards.pinout]]
+pins = [8, 9]
+
+[system.boards.pinout.interface]
+I2C = "Controller"
+
+[[system.boards]]
+name = "OLED Featherwing (128x64)"
+manufacturer = "Adafruit"
+is_main_board = false
+standard = "Feather"
+pinout = []
+related_crates = ["sh1107"]
