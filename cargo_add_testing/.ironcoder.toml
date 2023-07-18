@@ -1,0 +1,282 @@
+name = "cargo_add_testing"
+location = 'C:\Users\carst\Projects\iron-coder\iron-coder-projects\cargo_add_testing'
+current_view = "BoardsView"
+
+[system.main_board]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+bsp = "iron-coder-feather-rp2040-bsp"
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[system.main_board.pinout]]
+pins = ["rx", "tx"]
+
+[system.main_board.pinout.interface]
+iface_type = "UART"
+direction = "Bidirectional"
+
+[[system.main_board.pinout]]
+pins = ["scl", "sda"]
+
+[system.main_board.pinout.interface]
+iface_type = "I2C"
+direction = "Output"
+
+[[system.main_board.pinout]]
+pins = ["mosi", "miso", "sclk"]
+
+[system.main_board.pinout.interface]
+iface_type = "SPI"
+direction = "Output"
+
+[[system.peripheral_boards]]
+name = "PiTFT 3.2 with Capacitive Touch Screen"
+manufacturer = "Adafruit"
+is_main_board = false
+bsp = "iron-coder-pitft-32-cap-touch-bsp"
+related_crates = ["ili9341", "embedded-graphics"]
+
+[[system.peripheral_boards.pinout]]
+pins = ["pin", "out"]
+
+[system.peripheral_boards.pinout.interface]
+iface_type = "SPI"
+direction = "Input"
+
+[[system.connections]]
+
+[system.connections.start_board]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+bsp = "iron-coder-feather-rp2040-bsp"
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[system.connections.start_board.pinout]]
+pins = ["rx", "tx"]
+
+[system.connections.start_board.pinout.interface]
+iface_type = "UART"
+direction = "Bidirectional"
+
+[[system.connections.start_board.pinout]]
+pins = ["scl", "sda"]
+
+[system.connections.start_board.pinout.interface]
+iface_type = "I2C"
+direction = "Output"
+
+[[system.connections.start_board.pinout]]
+pins = ["mosi", "miso", "sclk"]
+
+[system.connections.start_board.pinout.interface]
+iface_type = "SPI"
+direction = "Output"
+
+[system.connections.end_board]
+name = "PiTFT 3.2 with Capacitive Touch Screen"
+manufacturer = "Adafruit"
+is_main_board = false
+bsp = "iron-coder-pitft-32-cap-touch-bsp"
+related_crates = ["ili9341", "embedded-graphics"]
+
+[[system.connections.end_board.pinout]]
+pins = ["pin", "out"]
+
+[system.connections.end_board.pinout.interface]
+iface_type = "SPI"
+direction = "Input"
+
+[system.connections.interface_mapping]
+pins = ["pin", "out"]
+
+[system.connections.interface_mapping.interface]
+iface_type = "SPI"
+direction = "Input"
+
+[graph_editor]
+selected_nodes = []
+
+[[graph_editor.graph.nodes]]
+version = 0
+
+[[graph_editor.graph.nodes]]
+version = 1
+
+[graph_editor.graph.nodes.value]
+label = "Feather RP2040"
+inputs = []
+outputs = [["I2C : Output", { idx = 1, version = 1 }], ["SPI : Output", { idx = 2, version = 1 }]]
+
+[graph_editor.graph.nodes.value.id]
+idx = 1
+version = 1
+
+[graph_editor.graph.nodes.value.user_data]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+bsp = "iron-coder-feather-rp2040-bsp"
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = ["rx", "tx"]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "UART"
+direction = "Bidirectional"
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = ["scl", "sda"]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "I2C"
+direction = "Output"
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = ["mosi", "miso", "sclk"]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "SPI"
+direction = "Output"
+
+[[graph_editor.graph.nodes]]
+version = 1
+
+[graph_editor.graph.nodes.value]
+label = "PiTFT 3.2 with Capacitive Touch Screen"
+inputs = [["SPI : Input", { idx = 1, version = 1 }]]
+outputs = []
+
+[graph_editor.graph.nodes.value.id]
+idx = 2
+version = 1
+
+[graph_editor.graph.nodes.value.user_data]
+name = "PiTFT 3.2 with Capacitive Touch Screen"
+manufacturer = "Adafruit"
+is_main_board = false
+bsp = "iron-coder-pitft-32-cap-touch-bsp"
+related_crates = ["ili9341", "embedded-graphics"]
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = ["pin", "out"]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "SPI"
+direction = "Input"
+
+[[graph_editor.graph.inputs]]
+version = 0
+
+[[graph_editor.graph.inputs]]
+version = 1
+
+[graph_editor.graph.inputs.value]
+typ = "SPI"
+kind = "ConnectionOnly"
+shown_inline = true
+
+[graph_editor.graph.inputs.value.id]
+idx = 1
+version = 1
+
+[graph_editor.graph.inputs.value.value]
+pins = ["pin", "out"]
+
+[graph_editor.graph.inputs.value.value.interface]
+iface_type = "SPI"
+direction = "Input"
+
+[graph_editor.graph.inputs.value.node]
+idx = 2
+version = 1
+
+[[graph_editor.graph.outputs]]
+version = 0
+
+[[graph_editor.graph.outputs]]
+version = 1
+
+[graph_editor.graph.outputs.value]
+typ = "I2C"
+
+[graph_editor.graph.outputs.value.id]
+idx = 1
+version = 1
+
+[graph_editor.graph.outputs.value.node]
+idx = 1
+version = 1
+
+[[graph_editor.graph.outputs]]
+version = 1
+
+[graph_editor.graph.outputs.value]
+typ = "SPI"
+
+[graph_editor.graph.outputs.value.id]
+idx = 2
+version = 1
+
+[graph_editor.graph.outputs.value.node]
+idx = 1
+version = 1
+
+[[graph_editor.graph.connections]]
+version = 0
+
+[[graph_editor.graph.connections]]
+version = 1
+
+[graph_editor.graph.connections.value]
+idx = 2
+version = 1
+
+[[graph_editor.node_order]]
+idx = 2
+version = 1
+
+[[graph_editor.node_order]]
+idx = 1
+version = 1
+
+[[graph_editor.node_positions]]
+version = 0
+
+[[graph_editor.node_positions]]
+version = 1
+
+[graph_editor.node_positions.value]
+x = 45.33332824707031
+y = 2.6666717529296875
+
+[[graph_editor.node_positions]]
+version = 1
+
+[graph_editor.node_positions.value]
+x = 402.3333435058594
+y = 89.33333587646484
+
+[graph_editor.pan_zoom]
+zoom = 0.0
+
+[graph_editor.pan_zoom.pan]
+x = 0.0
+y = 0.0

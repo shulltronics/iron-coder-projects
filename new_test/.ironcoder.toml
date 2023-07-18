@@ -1,0 +1,130 @@
+name = "new_test"
+location = 'C:\Users\carst\Projects\iron-coder\iron-coder-projects\new_test'
+current_view = "BoardsView"
+
+[system]
+peripheral_boards = []
+connections = []
+
+[system.main_board]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+bsp = "iron-coder-feather-rp2040-bsp"
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[system.main_board.pinout]]
+pins = [0, 1]
+
+[system.main_board.pinout.interface]
+iface_type = "UART"
+direction = "Bidirectional"
+
+[[system.main_board.pinout]]
+pins = [8, 9]
+
+[system.main_board.pinout.interface]
+iface_type = "I2C"
+direction = "Output"
+
+[graph_editor]
+selected_nodes = []
+
+[[graph_editor.graph.nodes]]
+version = 0
+
+[[graph_editor.graph.nodes]]
+version = 32
+
+[[graph_editor.graph.nodes]]
+version = 27
+
+[graph_editor.graph.nodes.value]
+label = "Feather RP2040"
+inputs = []
+outputs = [["I2C : Output", { idx = 1, version = 23 }]]
+
+[graph_editor.graph.nodes.value.id]
+idx = 2
+version = 27
+
+[graph_editor.graph.nodes.value.user_data]
+name = "Feather RP2040"
+manufacturer = "Adafruit"
+is_main_board = true
+standard = "Feather"
+cpu = "Cortex-M0"
+ram = 264
+flash = 8000
+bsp = "iron-coder-feather-rp2040-bsp"
+required_crates = ["adafruit-feather-rp2040", "embedded-hal", "embedded-time", "cortex-m-rt", "cortex-m", "panic-halt"]
+related_crates = ["smart-leds", "ws2812-pio"]
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = [0, 1]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "UART"
+direction = "Bidirectional"
+
+[[graph_editor.graph.nodes.value.user_data.pinout]]
+pins = [8, 9]
+
+[graph_editor.graph.nodes.value.user_data.pinout.interface]
+iface_type = "I2C"
+direction = "Output"
+
+[[graph_editor.graph.inputs]]
+version = 0
+
+[[graph_editor.graph.inputs]]
+version = 8
+
+[[graph_editor.graph.outputs]]
+version = 0
+
+[[graph_editor.graph.outputs]]
+version = 23
+
+[graph_editor.graph.outputs.value]
+typ = "I2C"
+
+[graph_editor.graph.outputs.value.id]
+idx = 1
+version = 23
+
+[graph_editor.graph.outputs.value.node]
+idx = 2
+version = 27
+
+[[graph_editor.graph.connections]]
+version = 0
+
+[[graph_editor.node_order]]
+idx = 2
+version = 27
+
+[[graph_editor.node_positions]]
+version = 0
+
+[[graph_editor.node_positions]]
+version = 0
+
+[[graph_editor.node_positions]]
+version = 27
+
+[graph_editor.node_positions.value]
+x = 224.66664123535156
+y = 73.66665649414063
+
+[graph_editor.pan_zoom]
+zoom = 0.0
+
+[graph_editor.pan_zoom.pan]
+x = 0.0
+y = 0.0
