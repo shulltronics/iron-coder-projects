@@ -10,5 +10,11 @@ panic-halt = "0.2.0"
 cortex-m-rt = "0.7.3"
 iron-coder-feather-rp2040-bsp = { version = "0.1.0", path = "../../iron-coder-boards/Adafruit/Feather_RP2040/bsp" }
 iron-coder-pitft-32-cap-touch-bsp = { version = "0.1.0", path = "../../iron-coder-boards/Adafruit/PiTTF_32_cap_touch/bsp" }
-embedded-graphics = "0.8.0"
-embedded-graphics-core = "0.4.0"
+embedded-graphics = "0.7.1"
+smart-leds = "0.3.0"
+embedded-hal = "0.2.7"
+embedded-hal-1 = { package = "embedded-hal", version = "1.0.0-alpha.9" }
+shared-bus = { version = "0.2.5", path = "../../../shared-bus", features = ["eh-alpha"] }
+ft6236 = "0.0.3"
+
+
